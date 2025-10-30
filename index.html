@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Sahayata - Farmer's Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <h1>Krishi Sahayata</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#crops">Crops</a></li>
+                    <li><a href="#disease">Disease Detection</a></li>
+                    <li><a href="#weather">Weather</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Empowering Indian Farmers with Technology</h2>
+            <p>Get complete information about crops, detect diseases early, and maximize your yield with our farmer assistance platform.</p>
+            <a href="#crops" class="btn">Explore Crops</a>
+        </div>
+    </section>
+
+    <!-- Crop Selection Section -->
+    <section class="section" id="crops">
+        <div class="container">
+            <div class="section-title">
+                <h2>Select Your Crop</h2>
+                <p>Choose a crop to get detailed information about cultivation practices, water requirements, fertilizers, and common diseases.</p>
+            </div>
+
+            <div class="crop-selection">
+                <!-- Wheat -->
+                 <div class="crop-card" data-crop="wheat">
+                    <img src="wheat image.jpg" alt="Wheat">
+                    <div class="crop-card-content">
+                        <h3>Wheat</h3>
+                        <p>Rabi season crop, staple food grain</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="rice">
+                    <img src="rice.jpg" alt="Rice">
+                    <div class="crop-card-content">
+                        <h3>Rice</h3>
+                        <p>Kharif season crop, major food grain</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="maize">
+                    <img src="maize.jpg" alt="Maize">
+                    <div class="crop-card-content">
+                        <h3>Maize</h3>
+                        <p>Kharif and Rabi season crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="barley">
+                    <img src="barley.jpg" alt="Barley">
+                    <div class="crop-card-content">
+                        <h3>Barley (Jau)</h3>
+                        <p>Rabi season cereal crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="sorghum">
+                    <img src="sorgum.jpg">
+                    <div class="crop-card-content">
+                        <h3>Sorghum (jvaar)</h3>
+                        <p>Kharif season drought-resistant crop</p>
+                    </div>
+                </div>  
+
+                <!-- Pulses -->
+                <div class="crop-card" data-crop="chickpea">
+                    <img src="Chickpea.jpg" alt="Chickpea">
+                    <div class="crop-card-content">
+                        <h3>Chickpea (chana)</h3>
+                        <p>Rabi season pulse, protein-rich</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="pigeonpea">
+                    <img src="pigeonpea.jpg" alt="Pigeonpea">
+                    <div class="crop-card-content">
+                        <h3>Pigeonpea (Arahar)</h3>
+                        <p>Dual-purpose pulse crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="lentil">
+                    <img src="lentils.jpg" alt="Lentil">
+                    <div class="crop-card-content">
+                        <h3>Lentil (Masoor)</h3>
+                        <p>Rabi season nutritious pulse</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="mungbean">
+                    <img src="Mung Bean1.jpg" alt="Mung Bean">
+                    <div class="crop-card-content">
+                        <h3>Mung Bean</h3>
+                        <p>Kharif season short-duration pulse</p>
+                    </div>
+                </div>
+
+                <!-- Oilseeds -->
+                <div class="crop-card" data-crop="mustard">
+                    <img src="Mustard.jpg" alt="Mustard">
+                    <div class="crop-card-content">
+                        <h3>Mustard</h3>
+                        <p>Rabi season oilseed crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="groundnut">
+                    <img src="Groundnut.jpg" alt="Groundnut">
+                    <div class="crop-card-content">
+                        <h3>Groundnut</h3>
+                        <p>Kharif season oilseed and food crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="sunflower">
+                    <img src="Sunflower.jpg" alt="Sunflower">
+                    <div class="crop-card-content">
+                        <h3>Sunflower</h3>
+                        <p>Oilseed crop with high oil content</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="soybean">
+                    <img src="Soybean.jpg" alt="Soybean">
+                    <div class="crop-card-content">
+                        <h3>Soybean</h3>
+                        <p>Kharif season oilseed and protein crop</p>
+                    </div>
+                </div>
+
+                <!-- Cash Crops -->
+                <div class="crop-card" data-crop="sugarcane">
+                    <img src="Sugarcane.jpg" alt="Sugarcane">
+                    <div class="crop-card-content">
+                        <h3>Sugarcane</h3>
+                        <p>Annual cash crop for sugar production</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="cotton">
+                    <img src="cotton.jpg" alt="Cotton">
+                    <div class="crop-card-content">
+                        <h3>Cotton</h3>
+                        <p>Kharif season fiber crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="tobacco">
+                    <img src="Tobacco.jpg" alt="Tobacco">
+                    <div class="crop-card-content">
+                        <h3>Tobacco</h3>
+                        <p>Commercial crop for leaves</p>
+                    </div>
+                </div>
+
+                <!-- Vegetables -->
+                <div class="crop-card" data-crop="potato">
+                    <img src="Potato.jpg" alt="Potato">
+                    <div class="crop-card-content">
+                        <h3>Potato</h3>
+                        <p>Rabi season tuber vegetable</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="tomato">
+                    <img src="Tomato.jpg" alt="Tomato">
+                    <div class="crop-card-content">
+                        <h3>Tomato</h3>
+                        <p>Year-round vegetable crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="onion">
+                    <img src="Onion.jpg" alt="Onion">
+                    <div class="crop-card-content">
+                        <h3>Onion</h3>
+                        <p>Rabi season bulb vegetable</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="chilli">
+                    <img src="Chilli.jpg" alt="Chilli">
+                    <div class="crop-card-content">
+                        <h3>Chilli</h3>
+                        <p>Spice crop, Kharif and Rabi season</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="brinjal">
+                    <img src="Brinjal.jpg" alt="Brinjal">
+                    <div class="crop-card-content">
+                        <h3>Brinjal</h3>
+                        <p>Year-round vegetable crop</p>
+                    </div>
+                </div>
+
+                <!-- Fruits -->
+                <div class="crop-card" data-crop="mango">
+                    <img src="Mango.jpg" alt="Mango">
+                    <div class="crop-card-content">
+                        <h3>Mango</h3>
+                        <p>King of fruits, perennial tree</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="banana">
+                    <img src="banana.jpg" alt="Banana">
+                    <div class="crop-card-content">
+                        <h3>Banana</h3>
+                        <p>Perennial fruit crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="citrus">
+                    <img src="citrus.jpg" alt="Citrus">
+                    <div class="crop-card-content">
+                        <h3>Citrus</h3>
+                        <p>Orange, lemon, lime fruits</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="coconut">
+                    <img src="Coconut.jpg" alt="Coconut">
+                    <div class="crop-card-content">
+                        <h3>Coconut</h3>
+                        <p>Perennial palm crop</p>
+                    </div>
+                </div>
+
+                <!-- Spices -->
+                <div class="crop-card" data-crop="turmeric">
+                    <img src="Turmeric.jpg" alt="Turmeric">
+                    <div class="crop-card-content">
+                        <h3>Turmeric</h3>
+                        <p>Kharif season spice crop</p>
+                    </div>
+                </div>
+
+                <div class="crop-card" data-crop="ginger">
+                    <img src="Ginger.jpg" alt="Ginger">
+                    <div class="crop-card-content">
+                        <h3>Ginger</h3>
+                        <p>Kharif season spice crop</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crop Details Section -->
+            <div class="crop-details" id="cropDetails">
+                <!-- Wheat Details -->
+                <div class="crop-detail-content" id="wheat-details">
+                    <div class="crop-header">
+                        <img src="wheat image.jpg" alt="Wheat">
+                        <div class="crop-info">
+                            <h3>Wheat</h3>
+                            <p>Wheat is a Rabi season crop, typically sown in November and harvested in March/April. It is one of India's staple food grains and a major source of nutrition.</p>
+                        </div>
+                    </div>
+
+                    <div class="details-grid">
+                        <div class="detail-card">
+                            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+                            <p>110-130 days from sowing to harvest</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+                            <p>Requires 4-6 irrigations. Critical stages: Crown root initiation, Tillering, Jointing, Flowering, Milk stage. Total water requirement: 450-650 mm.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+                            <ul>
+                                <li>Nitrogen: 120-150 kg/ha in 2-3 splits</li>
+                                <li>Phosphorus: 60-80 kg/ha as basal dose</li>
+                                <li>Potassium: 40-60 kg/ha</li>
+                                <li>Zinc: 25 kg/ha zinc sulfate (if deficient)</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+                            <ul>
+                                <li>Rust: Use resistant varieties, spray Propiconazole</li>
+                                <li>Karnal bunt: Seed treatment with carbendazim</li>
+                                <li>Powdery mildew: Sulfur dusting or wettable sulfur</li>
+                                <li>Leaf blight: Mancozeb spray at initial appearance</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+                            <p>Well-drained loamy soil with pH 6.0-7.5. Avoid waterlogged conditions. Good organic matter content preferred.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-sun"></i> Climate</h4>
+                            <p>Cool weather with temperature between 10-25°C during growth. Requires sunny days during ripening. Frost sensitive during flowering.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+                            <p>Harvest when grains are hard and moisture content is 20-25%. Thresh immediately after harvesting to avoid shattering losses.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+                            <p>Average yield: 4-5 tons/ha with improved varieties. Potential yield: 6-7 tons/ha under optimal conditions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rice Details -->
+                <div class="crop-detail-content" id="rice-details" style="display: none;">
+                    <div class="crop-header">
+                        <img src="rice.jpg" alt="Rice">
+                        <div class="crop-info">
+                            <h3>Rice</h3>
+                            <p>Rice is a Kharif season crop, typically sown in June-July and harvested in October-November. It is the staple food for a majority of Indians and requires substantial water resources.</p>
+                        </div>
+                    </div>
+
+                    <div class="details-grid">
+                        <div class="detail-card">
+                            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+                            <p>90-150 days depending on variety (short, medium, long duration)</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+                            <p>Requires standing water (5-10 cm) during most growth stages. Total water requirement: 1100-1250 mm. Critical stages: Tillering, Panicle initiation, Flowering.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+                            <ul>
+                                <li>Nitrogen: 100-150 kg/ha in 3-4 splits</li>
+                                <li>Phosphorus: 50-60 kg/ha as basal dose</li>
+                                <li>Potassium: 40-60 kg/ha</li>
+                                <li>Zinc: 25 kg/ha zinc sulfate (if deficient)</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+                            <ul>
+                                <li>Blast: Use resistant varieties, spray Tricyclazole</li>
+                                <li>Brown spot: Seed treatment with carbendazim</li>
+                                <li>Sheath blight: Validamycin spray</li>
+                                <li>Bacterial leaf blight: Streptocycline spray</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+                            <p>Clayey loam with good water retention capacity. pH range: 5.5-6.5. Can tolerate slightly acidic conditions.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-sun"></i> Climate</h4>
+                            <p>Hot and humid climate with temperature between 20-40°C. Requires high rainfall or irrigation. Sensitive to low temperatures.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+                            <p>Harvest when 80-85% grains turn yellow and become hard. Moisture content should be 20-25%. Dry to 12-14% moisture for storage.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+                            <p>Average yield: 3-4 tons/ha. Potential yield: 6-8 tons/ha with hybrid varieties and proper management.</p>
+                        </div>
+                    </div>
+                </div>
+
+              
+                
+                <!-- Maize Details -->
+                <div class="crop-detail-content" id="maize-details" style="display: none;">
+                    <div class="crop-header">
+                        <img src="maize.jpg" alt="Maize">
+                        <div class="crop-info">
+                            <h3>Maize</h3>
+                            <p>Maize is grown in both Kharif and Rabi seasons. It's a versatile crop used for human consumption, animal feed, and industrial purposes.</p>
+                        </div>
+                    </div>
+
+                    <div class="details-grid">
+                        <div class="detail-card">
+                            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+                            <p>85-100 days for early varieties, 100-110 days for medium, 110-120 days for late varieties</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+                            <p>Requires 500-800 mm water. Critical stages: Knee-high stage, Tasseling, Silking, Grain filling. Sensitive to waterlogging.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+                            <ul>
+                                <li>Nitrogen: 120-150 kg/ha in 2-3 splits</li>
+                                <li>Phosphorus: 60-80 kg/ha as basal</li>
+                                <li>Potassium: 40-60 kg/ha</li>
+                                <li>Zinc: 25 kg/ha if deficient</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+                            <ul>
+                                <li>Turcicum leaf blight: Mancozeb spray</li>
+                                <li>Maydis leaf blight: Zineb or Mancozeb</li>
+                                <li>Stalk rot: Avoid waterlogging</li>
+                                <li>Common rust: Sulfur-based fungicides</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+                            <p>Well-drained fertile loams and alluvial soils. pH: 6.5-7.5. Good organic matter content essential.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-sun"></i> Climate</h4>
+                            <p>Warm weather crop. Temperature: 21-27°C. Requires frost-free period. Sensitive to low temperatures.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+                            <p>Harvest when grains are hard and moisture content is 20-25%. Dry to 12-14% for storage.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+                            <p>Average yield: 3-4 tons/ha. Potential: 8-10 tons/ha with hybrids and proper management.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barley Details -->
+<div class="crop-detail-content" id="barley-details" style="display: none;">
+    <div class="crop-header">
+        <img src="barley.jpg" alt="Barley">
+        <div class="crop-info">
+            <h3>Barley</h3>
+            <p>Barley is a Rabi season cereal crop known for its short duration and tolerance to saline and alkaline soils. Used for food, feed, and malt production.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>110-130 days depending on variety. Early maturing varieties: 90-100 days</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 3-4 irrigations. Total water: 400-500 mm. Critical stages: Crown root initiation, Tillering, Booting</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 60-80 kg/ha in 2 splits</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 20-30 kg/ha</li>
+                <li>Zinc: 20 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Stripe rust: Triadimefon spray</li>
+                <li>Powdery mildew: Sulfur dusting</li>
+                <li>Leaf blight: Mancozeb application</li>
+                <li>Covered smut: Seed treatment with carboxin</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained loamy soils. Tolerates saline and alkaline conditions better than wheat. pH: 6.5-8.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Cool season crop. Temperature: 12-25°C. More tolerant to frost and drought than wheat.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when grains are hard and moisture content is 20-22%. Timely harvest prevents shattering.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 2.5-3.5 tons/ha. Potential: 4-5 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Sorghum Details -->
+<div class="crop-detail-content" id="sorghum-details" style="display: none;">
+    <div class="crop-header">
+        <img src="sorgum.jpg" alt="Sorghum">
+        <div class="crop-info">
+            <h3>Sorghum  (Jowar)</h3>
+            <p>Sorghum is a drought-resistant Kharif season crop, well-suited for dryland farming. Used for food, fodder, and industrial purposes.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>100-120 days for grain types, 60-70 days for fodder types</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Drought-tolerant. Requires 450-650 mm water. Critical stages: Panicle initiation, Flowering, Grain filling</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 80-100 kg/ha in 2 splits</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 30-40 kg/ha</li>
+                <li>Zinc: 20 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Grain mold: Spray Captan or Thiram</li>
+                <li>Anthracnose: Use resistant varieties</li>
+                <li>Downy mildew: Metalaxyl seed treatment</li>
+                <li>Leaf blight: Mancozeb spray</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained loamy soils. Tolerates poor soils and drought conditions. pH: 6.0-8.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 25-35°C. Highly drought and heat tolerant.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when grains are hard and moisture content is 20-25%. For fodder, harvest at flowering stage.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 2-3 tons/ha grain. Potential: 4-5 tons/ha with improved management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Chickpea Details -->
+<div class="crop-detail-content" id="chickpea-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Chickpea.jpg" alt="Chickpea">
+        <div class="crop-info">
+            <h3>Chickpea</h3>
+            <p>Chickpea is a major Rabi season pulse crop, rich in protein. Two main types: Desi (brown) and Kabuli (white).</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>90-120 days for Desi types, 100-150 days for Kabuli types</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Drought-tolerant. Requires 2-3 irrigations. Critical stages: Branching, Flowering, Pod development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 20-25 kg/ha as starter dose</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 20-25 kg/ha</li>
+                <li>Rhizobium culture: Seed treatment essential</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Fusarium wilt: Use resistant varieties</li>
+                <li>Ascochyta blight: Carbendazim spray</li>
+                <li>Botrytis gray mold: Avoid waterlogging</li>
+                <li>Dry root rot: Seed treatment with carbendazim</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to clay loam soils. Avoid heavy soils. pH: 6.0-8.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Cool season crop. Temperature: 15-25°C. Sensitive to frost at flowering stage.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when leaves turn yellow and pods dry. Moisture content should be 15-18%.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 1.2-1.8 tons/ha. Potential: 2.5-3 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Pigeonpea Details -->
+<div class="crop-detail-content" id="pigeonpea-details" style="display: none;">
+    <div class="crop-header">
+        <img src="pigeonpea.jpg" alt="Pigeonpea">
+        <div class="crop-info">
+            <h3>Pigeonpea</h3>
+            <p>Pigeonpea is a perennial pulse crop grown as annual. Dual-purpose crop for grain and fodder. Long duration crop.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>150-180 days for early varieties, 180-240 days for medium, 240-300 days for late varieties</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Drought-tolerant. Requires 600-800 mm water. Critical stages: Flowering, Pod formation</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 20-25 kg/ha as starter</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 20-25 kg/ha</li>
+                <li>Zinc: 20 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Wilt: Use resistant varieties</li>
+                <li>Sterility mosaic: Roguing infected plants</li>
+                <li>Phytophthora blight: Metalaxyl spray</li>
+                <li>Alternaria blight: Mancozeb application</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to clay loam soils. Tolerates acidic soils. pH: 5.0-7.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 20-30°C. Requires warm weather throughout growth period.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when 80% pods turn brown. Multiple pickings possible for long duration varieties.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 0.8-1.2 tons/ha. Potential: 2-2.5 tons/ha with improved management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Lentil Details -->
+<div class="crop-detail-content" id="lentil-details" style="display: none;">
+    <div class="crop-header">
+        <img src="lentils.jpg" alt="Lentil">
+        <div class="crop-info">
+            <h3>Lentil</h3>
+            <p>Lentil is a nutritious Rabi season pulse crop, rich in protein. Important for vegetarian diets and soil fertility improvement.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>110-130 days for small-seeded, 130-150 days for large-seeded varieties</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 2-3 irrigations. Critical stages: Pre-flowering, Pod development. Sensitive to waterlogging.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 15-20 kg/ha as starter</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 20-25 kg/ha</li>
+                <li>Rhizobium: Seed treatment essential</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Wilt: Use resistant varieties</li>
+                <li>Stemphylium blight: Mancozeb spray</li>
+                <li>Rust: Sulfur dusting</li>
+                <li>Root rot: Proper drainage</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained loamy soils. Avoid heavy clay soils. pH: 6.0-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Cool season crop. Temperature: 15-25°C. Tolerant to frost but sensitive to heat during flowering.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when plants turn yellow and pods dry. Moisture content: 15-18%.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 0.8-1.2 tons/ha. Potential: 1.5-2 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Mung Bean Details -->
+<div class="crop-detail-content" id="mungbean-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Mung Bean1.jpg" alt="Mung Bean">
+        <div class="crop-info">
+            <h3>Mung Bean</h3>
+            <p>Mung bean is a short-duration Kharif season pulse crop. Quick growing and fits well in multiple cropping systems.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>60-75 days for summer crop, 80-90 days for Kharif crop</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 3-4 irrigations. Critical stages: Flower initiation, Pod development. Sensitive to waterlogging.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 15-20 kg/ha as starter</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 20-25 kg/ha</li>
+                <li>Rhizobium: Seed treatment recommended</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Yellow mosaic: Use resistant varieties</li>
+                <li>Cercospora leaf spot: Mancozeb spray</li>
+                <li>Powdery mildew: Sulfur dusting</li>
+                <li>Root rot: Proper drainage</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to loam soils. pH: 6.5-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 25-35°C. Requires warm weather for good growth.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when 80% pods turn black. Multiple pickings possible for indeterminate varieties.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 0.6-0.8 tons/ha. Potential: 1.2-1.5 tons/ha with improved management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Mustard Details -->
+<div class="crop-detail-content" id="mustard-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Mustard.jpg" alt="Mustard">
+        <div class="crop-info">
+            <h3>Mustard</h3>
+            <p>Mustard is an important Rabi season oilseed crop. Major source of edible oil in northern India. Also used as condiment.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>110-140 days depending on variety</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 3-4 irrigations. Critical stages: Rosette, Flowering, Pod formation</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 60-80 kg/ha in 2 splits</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 20-30 kg/ha</li>
+                <li>Sulfur: 20-30 kg/ha for oil quality</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>White rust: Metalaxyl spray</li>
+                <li>Alternaria blight: Mancozeb application</li>
+                <li>Downy mildew: Proper spacing</li>
+                <li>Sclerotinia rot: Crop rotation</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained loamy soils. Tolerates slightly alkaline conditions. pH: 6.5-8.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Cool season crop. Temperature: 10-25°C. Requires cool weather during vegetative growth.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when pods turn yellow and seeds become hard. Moisture content: 15-20%.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 1.2-1.8 tons/ha. Potential: 2.5-3 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Groundnut Details -->
+<div class="crop-detail-content" id="groundnut-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Groundnut.jpg" alt="Groundnut">
+        <div class="crop-info">
+            <h3>Groundnut</h3>
+            <p>Groundnut is an important Kharif season oilseed and food crop. Rich in protein and oil. Also known as peanut.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>100-120 days for bunch types, 120-140 days for spreading types</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 500-600 mm water. Critical stages: Flowering, Peg penetration, Pod development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 20-25 kg/ha as starter</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 40-50 kg/ha</li>
+                <li>Calcium: 200-400 kg/ha gypsum at flowering</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Tikka disease: Mancozeb spray</li>
+                <li>Stem rot: Proper drainage</li>
+                <li>Root rot: Crop rotation</li>
+                <li>Bud necrosis: Control thrips vector</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam soils. Avoid heavy clay soils. pH: 6.0-7.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 25-35°C. Requires warm weather and plenty of sunshine.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when inner shell lining turns dark. Moisture content: 25-30% at harvest.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 1.5-2 tons/ha. Potential: 3-4 tons/ha with improved management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Sunflower Details -->
+<div class="crop-detail-content" id="sunflower-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Sunflower.jpg" alt="Sunflower">
+        <div class="crop-info">
+            <h3>Sunflower</h3>
+            <p>Sunflower is an important oilseed crop with high oil content. Grown in both Kharif and Rabi seasons. Attractive to pollinators.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>90-100 days for Kharif, 105-130 days for Rabi season</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 4-5 irrigations. Critical stages: Button stage, Flowering, Grain filling</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 60-80 kg/ha in 2 splits</li>
+                <li>Phosphorus: 40-50 kg/ha as basal</li>
+                <li>Potassium: 40-50 kg/ha</li>
+                <li>Boron: 10 kg/ha borax if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Alternaria blight: Mancozeb spray</li>
+                <li>Rust: Sulfur dusting</li>
+                <li>Head rot: Proper drainage</li>
+                <li>Powdery mildew: Karathane application</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained loamy soils. Tolerates slightly alkaline conditions. pH: 6.5-8.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 20-30°C. Requires plenty of sunshine for good yield.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when back of head turns yellow and seeds harden. Moisture content: 20-25%.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 1.2-1.8 tons/ha. Potential: 2.5-3 tons/ha with hybrids.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Soybean Details -->
+<div class="crop-detail-content" id="soybean-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Soybean.jpg" alt="Soybean">
+        <div class="crop-info">
+            <h3>Soybean</h3>
+            <p>Soybean is a Kharif season crop rich in protein and oil. Used for food, feed, and industrial purposes. Important for soil fertility.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>90-110 days for early varieties, 110-130 days for medium, 130-150 days for late varieties</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 450-650 mm water. Critical stages: Flowering, Pod development, Seed filling</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 20-25 kg/ha as starter</li>
+                <li>Phosphorus: 60-80 kg/ha as basal</li>
+                <li>Potassium: 40-50 kg/ha</li>
+                <li>Rhizobium: Seed treatment essential</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Yellow mosaic: Use resistant varieties</li>
+                <li>Bacterial blight: Streptocycline spray</li>
+                <li>Charcoal rot: Avoid drought stress</li>
+                <li>Rhizoctonia root rot: Seed treatment</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained loamy soils with good organic matter. pH: 6.0-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 20-30°C. Requires warm weather for good growth.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when leaves yellow and pods dry. Moisture content: 15-17%.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 1.5-2 tons/ha. Potential: 3-4 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Sugarcane Details -->
+<div class="crop-detail-content" id="sugarcane-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Sugarcane.jpg" alt="Sugarcane">
+        <div class="crop-info">
+            <h3>Sugarcane</h3>
+            <p>Sugarcane is an annual cash crop grown for sugar production. Long duration crop requiring substantial inputs but offering high returns.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>12-18 months depending on variety and season</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>High water requirement: 1500-2500 mm. Requires 15-25 irrigations. Critical stages: Germination, Tillering, Grand growth period</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 200-250 kg/ha in 3-4 splits</li>
+                <li>Phosphorus: 60-80 kg/ha as basal</li>
+                <li>Potassium: 100-120 kg/ha</li>
+                <li>Zinc: 25 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Red rot: Use resistant varieties</li>
+                <li>Smut: Hot water treatment of setts</li>
+                <li>Wilt: Proper drainage</li>
+                <li>Grassy shoot: Use disease-free setts</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Deep, well-drained medium to heavy soils. Good water holding capacity essential. pH: 6.5-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Hot and humid climate. Temperature: 20-35°C. Requires plenty of sunshine and warm temperatures.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when sugar content reaches 18-20%. Judge by brix reading or visual maturity signs.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 70-100 tons/ha. Potential: 120-150 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Cotton Details -->
+<div class="crop-detail-content" id="cotton-details" style="display: none;">
+    <div class="crop-header">
+        <img src="cotton.jpg" alt="Cotton">
+        <div class="crop-info">
+            <h3>Cotton</h3>
+            <p>Cotton is a Kharif season fiber crop, often called 'white gold'. Major cash crop providing raw material for textile industry.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>150-180 days for American cotton, 120-150 days for Desi cotton</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 600-800 mm water. Critical stages: Square formation, Flowering, Boll development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 100-120 kg/ha in 3 splits</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 50-60 kg/ha</li>
+                <li>Zinc: 25 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Fusarium wilt: Use resistant varieties</li>
+                <li>Bacterial blight: Streptocycline spray</li>
+                <li>Grey mildew: Sulfur dusting</li>
+                <li>Root rot: Proper drainage</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained deep black soils (regur) preferred. Also grows in alluvial soils. pH: 6.0-8.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 21-30°C. Requires 200+ frost-free days.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Multiple pickings as bolls mature. Harvest when bolls burst open and lint fluffs out.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 2-3 tons/ha seed cotton. Potential: 4-5 tons/ha with Bt cotton.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Tobacco Details -->
+<div class="crop-detail-content" id="tobacco-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Tobacco.jpg" alt="Tobacco">
+        <div class="crop-info">
+            <h3>Tobacco</h3>
+            <p>Tobacco is a commercial crop grown for its leaves. Requires careful management and specific curing processes for quality production.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>90-120 days from transplanting to harvest</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 4-5 irrigations. Critical stages: Transplanting, Early growth, Topping stage</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 40-60 kg/ha based on soil type</li>
+                <li>Phosphorus: 30-40 kg/ha as basal</li>
+                <li>Potassium: 60-80 kg/ha</li>
+                <li>Zinc: 20 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Damping off: Seed treatment</li>
+                <li>Black shank: Use resistant varieties</li>
+                <li>Brown spot: Mancozeb spray</li>
+                <li>Mosaic virus: Control aphids</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to loam soils. Good drainage essential. pH: 5.5-6.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 20-30°C. Requires frost-free period of 120 days.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Priming method - harvest leaves as they mature from bottom upwards. 4-6 pickings at weekly intervals.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 1.5-2 tons/ha cured leaves. Potential: 2.5-3 tons/ha with good management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Potato Details -->
+<div class="crop-detail-content" id="potato-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Potato.jpg" alt="Potato">
+        <div class="crop-info">
+            <h3>Potato</h3>
+            <p>Potato is a Rabi season tuber vegetable, widely consumed as staple food. Short duration crop with high yield potential.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>80-100 days for early varieties, 100-120 days for main crop</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 5-6 irrigations. Critical stages: Sprouting, Tuber initiation, Tuber development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 120-150 kg/ha in 2 splits</li>
+                <li>Phosphorus: 60-80 kg/ha as basal</li>
+                <li>Potassium: 100-120 kg/ha</li>
+                <li>Zinc: 25 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Late blight: Mancozeb spray</li>
+                <li>Early blight: Zineb application</li>
+                <li>Black scurf: Seed treatment</li>
+                <li>Viral diseases: Use certified seeds</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to loam soils. Loose soil essential for tuber development. pH: 5.5-6.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Cool season crop. Temperature: 15-25°C. Tuber formation best at 17-19°C.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when vines dry. Skin should not peel off easily. Cure for 10-15 days before storage.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 20-25 tons/ha. Potential: 40-50 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Tomato Details -->
+<div class="crop-detail-content" id="tomato-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Tomato.jpg" alt="Tomato">
+        <div class="crop-info">
+            <h3>Tomato</h3>
+            <p>Tomato is a year-round vegetable crop, highly nutritious and widely used in Indian cuisine. Can be grown in multiple seasons.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>90-120 days from transplanting to last picking</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 6-8 irrigations. Critical stages: Transplanting, Flowering, Fruit development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 100-120 kg/ha in 3-4 splits</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 60-80 kg/ha</li>
+                <li>Calcium: Foliar spray to prevent blossom end rot</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Early blight: Mancozeb spray</li>
+                <li>Late blight: Metalaxyl application</li>
+                <li>Bacterial wilt: Use resistant varieties</li>
+                <li>Leaf curl: Control whitefly</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to clay loam soils. Good organic matter preferred. pH: 6.0-7.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 18-27°C. Sensitive to frost and extreme heat.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Multiple pickings at mature green or ripe stage. Harvest every 4-5 days during peak season.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 25-35 tons/ha. Potential: 60-80 tons/ha with hybrids and protected cultivation.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Onion Details -->
+<div class="crop-detail-content" id="onion-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Onion.jpg" alt="Onion">
+        <div class="crop-info">
+            <h3>Onion</h3>
+            <p>Onion is a Rabi season bulb vegetable, essential in Indian cooking. Can be stored for long periods, making it an important commercial crop.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>120-150 days from transplanting to harvest</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 8-10 irrigations. Critical stages: Bulb initiation, Bulb development. Stop irrigation 15-20 days before harvest.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 100-120 kg/ha in 3 splits</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 60-80 kg/ha</li>
+                <li>Sulfur: 20-30 kg/ha for pungency</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Purple blotch: Mancozeb spray</li>
+                <li>Stemphylium blight: Copper oxychloride</li>
+                <li>Basal rot: Proper drainage</li>
+                <li>Thrips: Imidacloprid spray</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to loam soils. Heavy soils produce deformed bulbs. pH: 6.0-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Cool season crop. Temperature: 13-24°C. Requires moderate temperatures for bulb formation.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when tops fall over and neck tissues soften. Cure for 10-15 days before storage.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 20-25 tons/ha. Potential: 35-40 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Chilli Details -->
+<div class="crop-detail-content" id="chilli-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Chilli.jpg" alt="Chilli">
+        <div class="crop-info">
+            <h3>Chilli</h3>
+            <p>Chilli is an important spice crop grown in both Kharif and Rabi seasons. Used fresh as vegetable and dried as spice.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>150-180 days with multiple pickings</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 8-10 irrigations. Critical stages: Transplanting, Flowering, Fruit setting</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 100-120 kg/ha in 3-4 splits</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 60-80 kg/ha</li>
+                <li>Zinc: 25 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Die-back: Copper oxychloride spray</li>
+                <li>Fruit rot: Mancozeb application</li>
+                <li>Leaf curl: Control whitefly</li>
+                <li>Bacterial wilt: Use resistant varieties</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to loam soils. Good organic matter preferred. pH: 6.0-7.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 20-30°C. Sensitive to frost and waterlogging.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Multiple pickings at green or red ripe stage. For dry chillies, harvest when fully red.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 1.5-2 tons/ha dry chillies. Potential: 3-4 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Brinjal Details -->
+<div class="crop-detail-content" id="brinjal-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Brinjal.jpg" alt="Brinjal">
+        <div class="crop-info">
+            <h3>Brinjal</h3>
+            <p>Brinjal (Eggplant) is a year-round vegetable crop, popular in Indian cuisine. Available in various shapes, sizes and colors.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>140-160 days with continuous harvesting</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 8-10 irrigations. Critical stages: Transplanting, Flowering, Fruit development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 100-120 kg/ha in 3-4 splits</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 60-80 kg/ha</li>
+                <li>Zinc: 25 kg/ha if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Phomopsis blight: Mancozeb spray</li>
+                <li>Bacterial wilt: Use resistant varieties</li>
+                <li>Little leaf: Control leafhopper</li>
+                <li>Fruit rot: Proper spacing</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to clay loam soils. Good organic matter preferred. pH: 5.5-6.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Warm season crop. Temperature: 22-30°C. Sensitive to frost and waterlogging.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when fruits attain full size but are still tender. Regular picking encourages more flowering.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 25-35 tons/ha. Potential: 50-60 tons/ha with hybrids and good management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Mango Details -->
+<div class="crop-detail-content" id="mango-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Mango.jpg" alt="Mango">
+        <div class="crop-info">
+            <h3>Mango</h3>
+            <p>Mango, the 'King of Fruits', is a perennial fruit tree widely grown in India. Long-lived trees with high economic value.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>Perennial tree, starts bearing in 4-5 years, productive for 40-50 years</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Young trees: 8-10 irrigations/year. Bearing trees: Critical stages - Flowering, Fruit set, Fruit development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 1-1.5 kg/tree/year for bearing trees</li>
+                <li>Phosphorus: 0.5-0.75 kg/tree/year</li>
+                <li>Potassium: 0.75-1 kg/tree/year</li>
+                <li>Farmyard manure: 50-100 kg/tree/year</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Anthracnose: Copper oxychloride spray</li>
+                <li>Powdery mildew: Sulfur dusting</li>
+                <li>Mango malformation: Proper pruning</li>
+                <li>Fruit fly: Bait traps</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Deep, well-drained soils. Can grow in various soil types except waterlogged conditions. pH: 5.5-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Tropical fruit. Temperature: 24-30°C. Requires distinct dry period for flowering.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest based on variety and purpose. For local market: mature green; for distant: physiological mature.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 8-10 tons/ha. Potential: 15-20 tons/ha with improved varieties and management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Banana Details -->
+<div class="crop-detail-content" id="banana-details" style="display: none;">
+    <div class="crop-header">
+        <img src="banana.jpg" alt="Banana">
+        <div class="crop-info">
+            <h3>Banana</h3>
+            <p>Banana is a perennial fruit crop grown throughout India. Quick growing with high yield potential. Important for nutrition and income.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>12-15 months from planting to harvest. Ratoon crops: 10-12 months</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>High water requirement. Requires irrigation every 4-7 days. Critical stages: Vegetative growth, Bunch emergence</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 200-250 g/plant in 5-6 splits</li>
+                <li>Phosphorus: 60-80 g/plant as basal</li>
+                <li>Potassium: 300-400 g/plant in splits</li>
+                <li>Farmyard manure: 10-15 kg/plant/year</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Panama wilt: Use resistant varieties</li>
+                <li>Sigatoka leaf spot: Mancozeb spray</li>
+                <li>Bunchy top: Use disease-free suckers</li>
+                <li>Burrowing nematode: Corm treatment</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Deep, well-drained loamy soils rich in organic matter. pH: 6.0-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Tropical fruit. Temperature: 15-35°C. High humidity preferred. Sensitive to strong winds.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when fingers are fully mature but still green. Bunch age: 90-120 days after flowering.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 40-50 tons/ha. Potential: 60-80 tons/ha with tissue culture plants.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Citrus Details -->
+<div class="crop-detail-content" id="citrus-details" style="display: none;">
+    <div class="crop-header">
+        <img src="citrus.jpg" alt="Citrus">
+        <div class="crop-info">
+            <h3>Citrus</h3>
+            <p>Citrus includes oranges, lemons, limes and other related fruits. Perennial trees with high nutritional and economic value.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>Perennial trees, start bearing in 3-5 years, productive for 25-30 years</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 15-20 irrigations/year. Critical stages: Flowering, Fruit set, Fruit development</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 500-800 g/tree/year in splits</li>
+                <li>Phosphorus: 200-300 g/tree/year</li>
+                <li>Potassium: 300-500 g/tree/year</li>
+                <li>Zinc: Foliar spray if deficient</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Citrus canker: Copper-based sprays</li>
+                <li>Greening: Control psyllid vector</li>
+                <li>Powdery mildew: Sulfur dusting</li>
+                <li>Root rot: Proper drainage</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained medium to light soils. Avoid heavy clay and calcareous soils. pH: 5.5-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Subtropical fruit. Temperature: 13-37°C. Sensitive to frost and extreme heat.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest based on color development and TSS:acid ratio. Multiple pickings for optimal quality.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 15-25 tons/ha. Potential: 40-50 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Coconut Details -->
+<div class="crop-detail-content" id="coconut-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Coconut.jpg" alt="Coconut">
+        <div class="crop-info">
+            <h3>Coconut</h3>
+            <p>Coconut is a perennial palm crop, often called 'Kalpavriksha' for its multiple uses. Grown in coastal regions and high rainfall areas.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>Perennial palm, starts bearing in 5-7 years, productive for 60-70 years</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>High water requirement. Annual rainfall: 1500-2500 mm ideal. Critical stages: Dry months for irrigation</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 500 g/palm/year in 2 splits</li>
+                <li>Phosphorus: 300 g/palm/year</li>
+                <li>Potassium: 1200 g/palm/year</li>
+                <li>Organic manure: 50 kg/palm/year</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Root wilt: No effective control</li>
+                <li>Leaf rot: Bordeaux mixture</li>
+                <li>Bud rot: Remove affected tissues</li>
+                <li>Stem bleeding: Chisel and apply Bordeaux paste</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to laterite soils. Good drainage essential. pH: 5.0-8.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Tropical crop. Temperature: 20-32°C. High humidity and coastal climate preferred.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest tender nuts at 6-7 months, mature nuts at 12 months. 45-60 day harvesting intervals.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 80-100 nuts/palm/year. Potential: 150-200 nuts/palm/year with good management.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Turmeric Details -->
+<div class="crop-detail-content" id="turmeric-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Turmeric.jpg" alt="Turmeric">
+        <div class="crop-info">
+            <h3>Turmeric</h3>
+            <p>Turmeric is a Kharif season spice crop, valued for its rhizomes used as spice, medicine and dye. Important cash crop.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>7-9 months from planting to harvest</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 15-20 irrigations. Critical stages: Germination, Rhizome development. Stop irrigation 1 month before harvest.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 60-80 kg/ha in 2 splits</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 80-100 kg/ha</li>
+                <li>Farmyard manure: 25-30 tons/ha</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Leaf blotch: Mancozeb spray</li>
+                <li>Rhizome rot: Proper drainage</li>
+                <li>Leaf spot: Copper oxychloride</li>
+                <li>Nematodes: Soil treatment</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to clay loam soils. Good organic matter preferred. pH: 5.5-7.5</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Tropical crop. Temperature: 20-35°C. Requires warm, humid climate with good rainfall.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest when leaves turn yellow and dry. Carefully dig out rhizomes to avoid damage.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 20-25 tons/ha fresh rhizomes. Potential: 30-35 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Ginger Details -->
+<div class="crop-detail-content" id="ginger-details" style="display: none;">
+    <div class="crop-header">
+        <img src="Ginger.jpg" alt="Ginger">
+        <div class="crop-info">
+            <h3>Ginger</h3>
+            <p>Ginger is a Kharif season spice crop grown for its aromatic rhizomes. Used as spice, medicine and in various food products.</p>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card">
+            <h4><i class="fas fa-calendar-alt"></i> Crop Duration</h4>
+            <p>8-9 months from planting to harvest</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tint"></i> Water Requirements</h4>
+            <p>Requires 15-20 irrigations. Critical stages: Germination, Rhizome development. Sensitive to waterlogging.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-flask"></i> Fertilizers</h4>
+            <ul>
+                <li>Nitrogen: 75-100 kg/ha in 2 splits</li>
+                <li>Phosphorus: 50-60 kg/ha as basal</li>
+                <li>Potassium: 80-100 kg/ha</li>
+                <li>Farmyard manure: 25-30 tons/ha</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-bug"></i> Common Diseases</h4>
+            <ul>
+                <li>Soft rot: Proper drainage</li>
+                <li>Bacterial wilt: Use disease-free seed</li>
+                <li>Leaf spot: Mancozeb spray</li>
+                <li>Nematodes: Soil solarization</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-seedling"></i> Soil Requirements</h4>
+            <p>Well-drained sandy loam to loam soils rich in organic matter. pH: 6.0-7.0</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-sun"></i> Climate</h4>
+            <p>Tropical crop. Temperature: 20-30°C. Requires warm, humid climate with well-distributed rainfall.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-tractor"></i> Harvesting</h4>
+            <p>Harvest for green ginger at 6-7 months, for mature ginger at 8-9 months when leaves yellow.</p>
+        </div>
+
+        <div class="detail-card">
+            <h4><i class="fas fa-database"></i> Yield Potential</h4>
+            <p>Average yield: 15-20 tons/ha fresh rhizomes. Potential: 25-30 tons/ha with improved varieties.</p>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Disease Detection Section -->
+    <section class="section" id="disease">
+        <div class="container">
+            <div class="section-title">
+                <h2>Crop Disease Detection</h2>
+                <p>Upload an image of your crop to detect diseases and get treatment recommendations.</p>
+            </div>
+
+            <div class="disease-detection">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Upload Crop Image</h3>
+                    <p>Click here or drag and drop an image of your crop</p>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                </div>
+
+                <button class="btn" id="analyzeBtn" style="display: none;">Analyze Image</button>
+
+                <div class="result-area" id="resultArea">
+                    <div class="result-header">
+                        <img id="resultImage" src="" alt="Uploaded Image">
+                        <div>
+                            <h3>Analysis Result</h3>
+                            <p id="diseaseName">Disease: Leaf Rust</p>
+                            <p id="confidence">Confidence: 92%</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><i class="fas fa-stethoscope"></i> Symptoms</h4>
+                        <p id="symptoms">Small, round to oval yellow spots on leaves that develop into reddish-brown pustules.</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><i class="fas fa-prescription-bottle-alt"></i> Treatment</h4>
+                        <ul id="treatment">
+                            <li>Spray with Propiconazole (Tilt 25EC) at 0.1%</li>
+                            <li>Apply Mancozeb (Dithane M-45) at 0.2%</li>
+                            <li>Use resistant varieties in next season</li>
+                            <li>Ensure proper field drainage</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4><i class="fas fa-shield-alt"></i> Prevention</h4>
+                        <ul id="prevention">
+                            <li>Use certified disease-free seeds</li>
+                            <li>Practice crop rotation</li>
+                            <li>Avoid excessive nitrogen application</li>
+                            <li>Remove and destroy infected plant debris</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="section" id="weather">
+        <div class="container">
+            <div class="section-title">
+                <h2>Weather Forecast</h2>
+                <p>Get accurate weather information for better crop planning and protection.</p>
+            </div>
+
+            <div class="weather-section">
+                <div class="weather-search">
+                    <input type="text" id="locationInput" placeholder="Enter your location (e.g., Delhi, India)">
+                    <button class="btn" id="getWeather">Get Weather</button>
+                </div>
+
+                <div class="weather-display" id="weatherDisplay">
+                    <div class="current-weather">
+                        <div class="weather-icon">
+                            <i class="fas fa-sun" id="weatherIcon"></i>
+                        </div>
+                        <div class="weather-details">
+                            <h3 id="currentTemp">--°C</h3>
+                            <p id="weatherDescription">--</p>
+                            <p id="locationName">--</p>
+                        </div>
+                    </div>
+
+                    <h3>5-Day Forecast</h3>
+                    <div class="weather-forecast" id="weatherForecast">
+                        <!-- Forecast will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Krishi Sahayata</h3>
+                    <p>Empowering Indian farmers with technology and knowledge to improve agricultural productivity and sustainability.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#crops">Crop Information</a></li>
+                        <li><a href="#disease">Disease Detection</a></li>
+                        <li><a href="#weather">Weather Forecast</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> IPS Academy School of computer, Indore</li>
+                        <li><i class="fas fa-phone"></i> +91 8085263339</li>
+                        <li><i class="fas fa-envelope"></i> info@krishisahayata.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest farming tips and updates.</p>
+                    <form>
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Krishi Sahayata. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
