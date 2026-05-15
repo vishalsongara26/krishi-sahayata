@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishi Sahayata - Farmer's Assistant</title>
+    <title data-i18n="page_title">Krishi Sahayata - Farmer's Assistant</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
      <link rel="stylesheet" href="style.css">
     
@@ -18,11 +18,30 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#crops">Crops</a></li>
-                    <li><a href="#disease">Disease Detection</a></li>
-                    <li><a href="#weather">Weather</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home"><span data-i18n="nav_home">Home</span></a></li>
+                    <li><a href="#crops"><span data-i18n="nav_crops">Crops</span></a></li>
+                    <li><a href="#disease"><span data-i18n="nav_disease">Disease Detection</span></a></li>
+                    <li><a href="#weather"><span data-i18n="nav_weather">Weather</span></a></li>
+                    <li><a href="#contact"><span data-i18n="nav_contact">Contact</span></a></li>
+                    <li class="lang-nav-item">
+                        <div class="lang-toggle" id="langToggle">
+                            <span class="lang-option active" data-lang="en">EN</span>
+                            <span class="lang-switch">
+                                <span class="lang-slider"></span>
+                            </span>
+                            <span class="lang-option" data-lang="hi">हि</span>
+                        </div>
+                    </li>
+                    <li class="auth-nav-item">
+                        <a href="#" id="loginBtn" class="auth-link"><i class="fas fa-user"></i> <span data-i18n="nav_login">Login</span></a>
+                        <div class="user-avatar" id="userAvatar" style="display:none;">
+                            <img src="" alt="User" id="avatarImg">
+                            <span id="userNameDisplay"></span>
+                            <div class="user-dropdown">
+                                <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> <span data-i18n="nav_logout">Logout</span></a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -31,9 +50,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h2>Empowering Indian Farmers with Technology</h2>
-            <p>Get complete information about crops, detect diseases early, and maximize your yield with our farmer assistance platform.</p>
-            <a href="#crops" class="btn">Explore Crops</a>
+            <h2 data-i18n="hero_title">Empowering Indian Farmers with Technology</h2>
+            <p data-i18n="hero_desc">Get complete information about crops, detect diseases early, and maximize your yield with our farmer assistance platform.</p>
+            <a href="#crops" class="btn"><span data-i18n="hero_btn">Explore Crops</span></a>
         </div>
     </section>
 
@@ -41,231 +60,230 @@
     <section class="section" id="crops">
         <div class="container">
             <div class="section-title">
-                <h2>Select Your Crop</h2>
-                <p>Choose a crop to get detailed information about cultivation practices, water requirements, fertilizers, and common diseases.</p>
+                <h2 data-i18n="section_crops_title">Select Your Crop</h2>
+                <p data-i18n="section_crops_desc">Choose a crop to get detailed information about cultivation practices, water requirements, fertilizers, and common diseases.</p>
             </div>
 
             <div class="crop-selection">
-                <!-- Wheat -->
+               
                  <div class="crop-card" data-crop="wheat">
                     <img src="wheat image.jpg" alt="Wheat">
                     <div class="crop-card-content">
-                        <h3>Wheat</h3>
-                        <p>Rabi season crop, staple food grain</p>
+                        <h3 data-i18n="crop_wheat_name">Wheat</h3>
+                        <p data-i18n="crop_wheat_desc">Rabi season crop, staple food grain</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="rice">
                     <img src="rice.jpg" alt="Rice">
                     <div class="crop-card-content">
-                        <h3>Rice</h3>
-                        <p>Kharif season crop, major food grain</p>
+                        <h3 data-i18n="crop_rice_name">Rice</h3>
+                        <p data-i18n="crop_rice_desc">Kharif season crop, major food grain</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="maize">
                     <img src="maize.jpg" alt="Maize">
                     <div class="crop-card-content">
-                        <h3>Maize</h3>
-                        <p>Kharif and Rabi season crop</p>
+                        <h3 data-i18n="crop_maize_name">Maize</h3>
+                        <p data-i18n="crop_maize_desc">Kharif and Rabi season crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="barley">
                     <img src="barley.jpg" alt="Barley">
                     <div class="crop-card-content">
-                        <h3>Barley (Jau)</h3>
-                        <p>Rabi season cereal crop</p>
+                        <h3 data-i18n="crop_barley_name">Barley (Jau)</h3>
+                        <p data-i18n="crop_barley_desc">Rabi season cereal crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="sorghum">
                     <img src="sorgum.jpg">
                     <div class="crop-card-content">
-                        <h3>Sorghum (jvaar)</h3>
-                        <p>Kharif season drought-resistant crop</p>
+                        <h3 data-i18n="crop_sorghum_name">Sorghum (jvaar)</h3>
+                        <p data-i18n="crop_sorghum_desc">Kharif season drought-resistant crop</p>
                     </div>
                 </div>  
 
-                <!-- Pulses -->
+                
                 <div class="crop-card" data-crop="chickpea">
                     <img src="Chickpea.jpg" alt="Chickpea">
                     <div class="crop-card-content">
-                        <h3>Chickpea (chana)</h3>
-                        <p>Rabi season pulse, protein-rich</p>
+                        <h3 data-i18n="crop_chickpea_name">Chickpea (chana)</h3>
+                        <p data-i18n="crop_chickpea_desc">Rabi season pulse, protein-rich</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="pigeonpea">
                     <img src="pigeonpea.jpg" alt="Pigeonpea">
                     <div class="crop-card-content">
-                        <h3>Pigeonpea (Arahar)</h3>
-                        <p>Dual-purpose pulse crop</p>
+                        <h3 data-i18n="crop_pigeonpea_name">Pigeonpea (Arahar)</h3>
+                        <p data-i18n="crop_pigeonpea_desc">Dual-purpose pulse crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="lentil">
                     <img src="lentils.jpg" alt="Lentil">
                     <div class="crop-card-content">
-                        <h3>Lentil (Masoor)</h3>
-                        <p>Rabi season nutritious pulse</p>
+                        <h3 data-i18n="crop_lentil_name">Lentil (Masoor)</h3>
+                        <p data-i18n="crop_lentil_desc">Rabi season nutritious pulse</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="mungbean">
                     <img src="Mung Bean1.jpg" alt="Mung Bean">
                     <div class="crop-card-content">
-                        <h3>Mung Bean</h3>
-                        <p>Kharif season short-duration pulse</p>
+                        <h3 data-i18n="crop_mungbean_name">Mung Bean</h3>
+                        <p data-i18n="crop_mungbean_desc">Kharif season short-duration pulse</p>
                     </div>
                 </div>
 
-                <!-- Oilseeds -->
+                
                 <div class="crop-card" data-crop="mustard">
                     <img src="Mustard.jpg" alt="Mustard">
                     <div class="crop-card-content">
-                        <h3>Mustard</h3>
-                        <p>Rabi season oilseed crop</p>
+                        <h3 data-i18n="crop_mustard_name">Mustard</h3>
+                        <p data-i18n="crop_mustard_desc">Rabi season oilseed crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="groundnut">
                     <img src="Groundnut.jpg" alt="Groundnut">
                     <div class="crop-card-content">
-                        <h3>Groundnut</h3>
-                        <p>Kharif season oilseed and food crop</p>
+                        <h3 data-i18n="crop_groundnut_name">Groundnut</h3>
+                        <p data-i18n="crop_groundnut_desc">Kharif season oilseed and food crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="sunflower">
                     <img src="Sunflower.jpg" alt="Sunflower">
                     <div class="crop-card-content">
-                        <h3>Sunflower</h3>
-                        <p>Oilseed crop with high oil content</p>
+                        <h3 data-i18n="crop_sunflower_name">Sunflower</h3>
+                        <p data-i18n="crop_sunflower_desc">Oilseed crop with high oil content</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="soybean">
                     <img src="Soybean.jpg" alt="Soybean">
                     <div class="crop-card-content">
-                        <h3>Soybean</h3>
-                        <p>Kharif season oilseed and protein crop</p>
+                        <h3 data-i18n="crop_soybean_name">Soybean</h3>
+                        <p data-i18n="crop_soybean_desc">Kharif season oilseed and protein crop</p>
                     </div>
                 </div>
 
-                <!-- Cash Crops -->
                 <div class="crop-card" data-crop="sugarcane">
                     <img src="Sugarcane.jpg" alt="Sugarcane">
                     <div class="crop-card-content">
-                        <h3>Sugarcane</h3>
-                        <p>Annual cash crop for sugar production</p>
+                        <h3 data-i18n="crop_sugarcane_name">Sugarcane</h3>
+                        <p data-i18n="crop_sugarcane_desc">Annual cash crop for sugar production</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="cotton">
                     <img src="cotton.jpg" alt="Cotton">
                     <div class="crop-card-content">
-                        <h3>Cotton</h3>
-                        <p>Kharif season fiber crop</p>
+                        <h3 data-i18n="crop_cotton_name">Cotton</h3>
+                        <p data-i18n="crop_cotton_desc">Kharif season fiber crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="tobacco">
                     <img src="Tobacco.jpg" alt="Tobacco">
                     <div class="crop-card-content">
-                        <h3>Tobacco</h3>
-                        <p>Commercial crop for leaves</p>
+                        <h3 data-i18n="crop_tobacco_name">Tobacco</h3>
+                        <p data-i18n="crop_tobacco_desc">Commercial crop for leaves</p>
                     </div>
                 </div>
 
-                <!-- Vegetables -->
+                
                 <div class="crop-card" data-crop="potato">
                     <img src="Potato.jpg" alt="Potato">
                     <div class="crop-card-content">
-                        <h3>Potato</h3>
-                        <p>Rabi season tuber vegetable</p>
+                        <h3 data-i18n="crop_potato_name">Potato</h3>
+                        <p data-i18n="crop_potato_desc">Rabi season tuber vegetable</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="tomato">
                     <img src="Tomato.jpg" alt="Tomato">
                     <div class="crop-card-content">
-                        <h3>Tomato</h3>
-                        <p>Year-round vegetable crop</p>
+                        <h3 data-i18n="crop_tomato_name">Tomato</h3>
+                        <p data-i18n="crop_tomato_desc">Year-round vegetable crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="onion">
                     <img src="Onion.jpg" alt="Onion">
                     <div class="crop-card-content">
-                        <h3>Onion</h3>
-                        <p>Rabi season bulb vegetable</p>
+                        <h3 data-i18n="crop_onion_name">Onion</h3>
+                        <p data-i18n="crop_onion_desc">Rabi season bulb vegetable</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="chilli">
                     <img src="Chilli.jpg" alt="Chilli">
                     <div class="crop-card-content">
-                        <h3>Chilli</h3>
-                        <p>Spice crop, Kharif and Rabi season</p>
+                        <h3 data-i18n="crop_chilli_name">Chilli</h3>
+                        <p data-i18n="crop_chilli_desc">Spice crop, Kharif and Rabi season</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="brinjal">
                     <img src="Brinjal.jpg" alt="Brinjal">
                     <div class="crop-card-content">
-                        <h3>Brinjal</h3>
-                        <p>Year-round vegetable crop</p>
+                        <h3 data-i18n="crop_brinjal_name">Brinjal</h3>
+                        <p data-i18n="crop_brinjal_desc">Year-round vegetable crop</p>
                     </div>
                 </div>
 
-                <!-- Fruits -->
+                
                 <div class="crop-card" data-crop="mango">
                     <img src="Mango.jpg" alt="Mango">
                     <div class="crop-card-content">
-                        <h3>Mango</h3>
-                        <p>King of fruits, perennial tree</p>
+                        <h3 data-i18n="crop_mango_name">Mango</h3>
+                        <p data-i18n="crop_mango_desc">King of fruits, perennial tree</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="banana">
                     <img src="banana.jpg" alt="Banana">
                     <div class="crop-card-content">
-                        <h3>Banana</h3>
-                        <p>Perennial fruit crop</p>
+                        <h3 data-i18n="crop_banana_name">Banana</h3>
+                        <p data-i18n="crop_banana_desc">Perennial fruit crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="citrus">
                     <img src="citrus.jpg" alt="Citrus">
                     <div class="crop-card-content">
-                        <h3>Citrus</h3>
-                        <p>Orange, lemon, lime fruits</p>
+                        <h3 data-i18n="crop_citrus_name">Citrus</h3>
+                        <p data-i18n="crop_citrus_desc">Orange, lemon, lime fruits</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="coconut">
                     <img src="Coconut.jpg" alt="Coconut">
                     <div class="crop-card-content">
-                        <h3>Coconut</h3>
-                        <p>Perennial palm crop</p>
+                        <h3 data-i18n="crop_coconut_name">Coconut</h3>
+                        <p data-i18n="crop_coconut_desc">Perennial palm crop</p>
                     </div>
                 </div>
 
-                <!-- Spices -->
+                
                 <div class="crop-card" data-crop="turmeric">
                     <img src="Turmeric.jpg" alt="Turmeric">
                     <div class="crop-card-content">
-                        <h3>Turmeric</h3>
-                        <p>Kharif season spice crop</p>
+                        <h3 data-i18n="crop_turmeric_name">Turmeric</h3>
+                        <p data-i18n="crop_turmeric_desc">Kharif season spice crop</p>
                     </div>
                 </div>
 
                 <div class="crop-card" data-crop="ginger">
                     <img src="Ginger.jpg" alt="Ginger">
                     <div class="crop-card-content">
-                        <h3>Ginger</h3>
-                        <p>Kharif season spice crop</p>
+                        <h3 data-i18n="crop_ginger_name">Ginger</h3>
+                        <p data-i18n="crop_ginger_desc">Kharif season spice crop</p>
                     </div>
                 </div>
             </div>
@@ -1984,37 +2002,37 @@
     <section class="section" id="disease">
         <div class="container">
             <div class="section-title">
-                <h2>Crop Disease Detection</h2>
-                <p>Upload an image of your crop to detect diseases and get treatment recommendations.</p>
+                <h2 data-i18n="section_disease_title">Crop Disease Detection</h2>
+                <p data-i18n="section_disease_desc">Upload an image of your crop to detect diseases and get treatment recommendations.</p>
             </div>
 
             <div class="disease-detection">
                 <div class="upload-area" id="uploadArea">
                     <i class="fas fa-cloud-upload-alt"></i>
-                    <h3>Upload Crop Image</h3>
-                    <p>Click here or drag and drop an image of your crop</p>
+                    <h3 data-i18n="disease_upload_title">Upload Crop Image</h3>
+                    <p data-i18n="disease_upload_desc">Click here or drag and drop an image of your crop</p>
                     <input type="file" id="fileInput" accept="image/*" style="display: none;">
                 </div>
 
-                <button class="btn" id="analyzeBtn" style="display: none;">Analyze Image</button>
+                <button class="btn" id="analyzeBtn" style="display: none;"><span data-i18n="disease_analyze_btn">Analyze Image</span></button>
 
                 <div class="result-area" id="resultArea">
                     <div class="result-header">
                         <img id="resultImage" src="" alt="Uploaded Image">
                         <div>
-                            <h3>Analysis Result</h3>
-                            <p id="diseaseName">Disease: Leaf Rust</p>
-                            <p id="confidence">Confidence: 92%</p>
+                            <h3 data-i18n="disease_result_title">Analysis Result</h3>
+                            <p id="diseaseName" data-i18n="disease_result_name">Disease: Leaf Rust</p>
+                            <p id="confidence" data-i18n="disease_result_confidence">Confidence: 92%</p>
                         </div>
                     </div>
 
                     <div class="detail-card">
-                        <h4><i class="fas fa-stethoscope"></i> Symptoms</h4>
+                        <h4><i class="fas fa-stethoscope"></i> <span data-i18n="disease_symptoms">Symptoms</span></h4>
                         <p id="symptoms">Small, round to oval yellow spots on leaves that develop into reddish-brown pustules.</p>
                     </div>
 
                     <div class="detail-card">
-                        <h4><i class="fas fa-prescription-bottle-alt"></i> Treatment</h4>
+                        <h4><i class="fas fa-prescription-bottle-alt"></i> <span data-i18n="disease_treatment">Treatment</span></h4>
                         <ul id="treatment">
                             <li>Spray with Propiconazole (Tilt 25EC) at 0.1%</li>
                             <li>Apply Mancozeb (Dithane M-45) at 0.2%</li>
@@ -2024,7 +2042,7 @@
                     </div>
 
                     <div class="detail-card">
-                        <h4><i class="fas fa-shield-alt"></i> Prevention</h4>
+                        <h4><i class="fas fa-shield-alt"></i> <span data-i18n="disease_prevention">Prevention</span></h4>
                         <ul id="prevention">
                             <li>Use certified disease-free seeds</li>
                             <li>Practice crop rotation</li>
@@ -2041,14 +2059,14 @@
     <section class="section" id="weather">
         <div class="container">
             <div class="section-title">
-                <h2>Weather Forecast</h2>
-                <p>Get accurate weather information for better crop planning and protection.</p>
+                <h2 data-i18n="section_weather_title">Weather Forecast</h2>
+                <p data-i18n="section_weather_desc">Get accurate weather information for better crop planning and protection.</p>
             </div>
 
             <div class="weather-section">
                 <div class="weather-search">
-                    <input type="text" id="locationInput" placeholder="Enter your location (e.g., Delhi, India)">
-                    <button class="btn" id="getWeather">Get Weather</button>
+                    <input type="text" id="locationInput" data-i18n-placeholder="weather_location_placeholder" placeholder="Enter your location (e.g., Indore, India)">
+                    <button class="btn" id="getWeather"><span data-i18n="weather_get_btn">Get Weather</span></button>
                 </div>
 
                 <div class="weather-display" id="weatherDisplay">
@@ -2063,7 +2081,7 @@
                         </div>
                     </div>
 
-                    <h3>3-Day Forecast</h3>
+                    <h3 data-i18n="weather_forecast_title">3-Day Forecast</h3>
                     <div class="weather-forecast" id="weatherForecast">
                         <!-- Forecast will be loaded here -->
                     </div>
@@ -2077,8 +2095,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Krishi Sahayata</h3>
-                    <p>Empowering Indian farmers with technology and knowledge to improve agricultural productivity and sustainability.</p>
+                    <h3 data-i18n="footer_brand_title">Krishi Sahayata</h3>
+                    <p data-i18n="footer_brand_desc">Empowering Indian farmers with technology and knowledge to improve agricultural productivity and sustainability.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -2088,42 +2106,171 @@
                 </div>
 
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footer_quicklinks_title">Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#crops">Crop Information</a></li>
-                        <li><a href="#disease">Disease Detection</a></li>
-                        <li><a href="#weather">Weather Forecast</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#home"><span data-i18n="footer_quicklinks_home">Home</span></a></li>
+                        <li><a href="#crops"><span data-i18n="footer_quicklinks_crops">Crop Information</span></a></li>
+                        <li><a href="#disease"><span data-i18n="footer_quicklinks_disease">Disease Detection</span></a></li>
+                        <li><a href="#weather"><span data-i18n="footer_quicklinks_weather">Weather Forecast</span></a></li>
+                        <li><a href="#contact"><span data-i18n="footer_quicklinks_contact">Contact Us</span></a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
-                    <h3>Contact Info</h3>
+                    <h3 data-i18n="footer_contact_title">Contact Info</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> IPS Academy School of computer, Indore</li>
-                        <li><i class="fas fa-phone"></i> +91 8085263339</li>
-                        <li><i class="fas fa-envelope"></i> info@krishisahayata.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_contact_address">IPS Academy School of computer, Indore</span></li>
+                        <li><i class="fas fa-phone"></i> <span data-i18n="footer_contact_phone">+91 8085263339</span></li>
+                        <li><i class="fas fa-envelope"></i> <span data-i18n="footer_contact_email">info@krishisahayata.com</span></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for the latest farming tips and updates.</p>
+                    <h3 data-i18n="footer_newsletter_title">Newsletter</h3>
+                    <p data-i18n="footer_newsletter_desc">Subscribe to our newsletter for the latest farming tips and updates.</p>
                     <form>
-                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
-                        <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
+                        <input type="email" data-i18n-placeholder="footer_newsletter_placeholder" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        <button type="submit" class="btn" style="width: 100%;"><span data-i18n="footer_newsletter_btn">Subscribe</span></button>
                     </form>
                 </div>
             </div>
 
             <div class="copyright">
-                <p>&copy; 2025 Krishi Sahayata. All rights reserved.</p>
+                <p><span data-i18n="footer_copyright">&copy; 2025 Krishi Sahayata. All rights reserved.</span></p>
             </div>
         </div>
     </footer>
+    <!-- Auth Modal -->
+    <div id="authModal" class="auth-modal">
+        <div class="auth-overlay" id="authOverlay"></div>
+        <div class="auth-container">
+            <button class="auth-close" id="authClose">&times;</button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login"><span data-i18n="auth_tab_login">Login</span></button>
+                <button class="auth-tab" data-tab="signup"><span data-i18n="auth_tab_signup">Sign Up</span></button>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form active" id="loginForm">
+                <div class="auth-form-header">
+                    <i class="fas fa-seedling"></i>
+                    <h3 data-i18n="auth_login_title">Welcome Back</h3>
+                    <p data-i18n="auth_login_subtitle">Login to your Krishi Sahayata account</p>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="loginEmail" data-i18n-placeholder="auth_email_placeholder" placeholder="Email address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="loginPassword" data-i18n-placeholder="auth_password_placeholder" placeholder="Password" required>
+                    <i class="fas fa-eye toggle-password" data-target="loginPassword"></i>
+                </div>
+                <div class="auth-options">
+                    <label><input type="checkbox" id="rememberMe"> <span data-i18n="auth_remember">Remember me</span></label>
+                    <a href="#" id="forgotPassword" class="forgot-link"><span data-i18n="auth_forgot">Forgot Password?</span></a>
+                </div>
+                <button type="submit" class="auth-submit"><span data-i18n="auth_login_btn">Login</span> <i class="fas fa-arrow-right"></i></button>
+                <div class="auth-divider"><span data-i18n="auth_divider">or continue with</span></div>
+                <div class="social-auth">
+                    <button type="button" class="social-btn google"><i class="fab fa-google"></i> <span data-i18n="auth_google">Google</span></button>
+                    <button type="button" class="social-btn github"><i class="fab fa-github"></i> <span data-i18n="auth_github">GitHub</span></button>
+                </div>
+                <p class="auth-switch"><span data-i18n="auth_no_account">Don't have an account?</span> <a href="#" data-tab="signup"><span data-i18n="auth_signup_link">Sign Up</span></a></p>
+            </form>
+
+            <!-- Signup Form -->
+            <form class="auth-form" id="signupForm">
+                <div class="auth-form-header">
+                    <i class="fas fa-seedling"></i>
+                    <h3 data-i18n="auth_signup_title">Create Account</h3>
+                    <p data-i18n="auth_signup_subtitle">Join Krishi Sahayata for free</p>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="signupName" data-i18n-placeholder="auth_name_placeholder" placeholder="Full name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="signupEmail" data-i18n-placeholder="auth_email_placeholder" placeholder="Email address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="signupPassword" data-i18n-placeholder="auth_password_placeholder" placeholder="Password (min 6 chars)" minlength="6" required>
+                    <i class="fas fa-eye toggle-password" data-target="signupPassword"></i>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="signupConfirm" data-i18n-placeholder="auth_confirm_placeholder" placeholder="Confirm password" required>
+                </div>
+                <label class="terms-label">
+                    <input type="checkbox" id="agreeTerms" required>
+                    <span data-i18n="auth_terms_text">I agree to the</span> <a href="#"><span data-i18n="auth_terms_link">Terms & Conditions</span></a>
+                </label>
+                <button type="submit" class="auth-submit"><span data-i18n="auth_signup_btn">Create Account</span> <i class="fas fa-rocket"></i></button>
+                <div class="auth-divider"><span data-i18n="auth_divider">or continue with</span></div>
+                <div class="social-auth">
+                    <button type="button" class="social-btn google"><i class="fab fa-google"></i> <span data-i18n="auth_google">Google</span></button>
+                    <button type="button" class="social-btn github"><i class="fab fa-github"></i> <span data-i18n="auth_github">GitHub</span></button>
+                </div>
+                <p class="auth-switch"><span data-i18n="auth_has_account">Already have an account?</span> <a href="#" data-tab="login"><span data-i18n="auth_login_link">Login</span></a></p>
+            </form>
+
+            <!-- Forgot Password -->
+            <form class="auth-form" id="forgotForm">
+                <div class="auth-form-header">
+                    <i class="fas fa-key"></i>
+                    <h3 data-i18n="auth_forgot_title">Reset Password</h3>
+                    <p data-i18n="auth_forgot_subtitle">Enter your email to receive reset link</p>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="forgotEmail" data-i18n-placeholder="auth_email_placeholder" placeholder="Email address" required>
+                </div>
+                <button type="submit" class="auth-submit"><span data-i18n="auth_forgot_btn">Send Reset Link</span> <i class="fas fa-paper-plane"></i></button>
+                <p class="auth-switch"><a href="#" data-tab="login"><span data-i18n="auth_back_to_login">Back to Login</span></a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Floating Chatbot Button -->
+    <button id="chatbotToggle" class="chatbot-toggle">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbotModal" class="chatbot-modal">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h3><i class="fas fa-robot"></i> <span data-i18n="chatbot_title">Krishi AI Sahayak</span></h3>
+                <button id="closeChatbot" class="close-chat">&times;</button>
+            </div>
+            <div class="chatbot-body" id="chatbotBody">
+                <div class="chat-message bot">
+                    <div class="message-content">
+                        <i class="fas fa-robot"></i>
+                        <p>नमस्ते! मैं आपका AI कृषि सहायक हूँ।<br>
+                        मुझसे पूछिए:<br>
+                        • फसलों के बारे में जानकारी<br>
+                        • रोग और उपचार<br>
+                        • उर्वरक सलाह<br>
+                        • सरकारी योजनाएँ<br>
+                        • मंडी भाव</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-footer">
+                <input type="text" id="chatbotInput" data-i18n-placeholder="chatbot_placeholder" placeholder="अपना सवाल हिंदी या अंग्रेजी में लिखें..." />
+                <button id="sendChatbotMsg"><i class="fas fa-paper-plane"></i></button>
+                <button id="voiceInputBtn"><i class="fas fa-microphone"></i></button>
+                <button id="voiceReadBtn"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
